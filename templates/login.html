@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="{% static 'fonts/linearicons/style.css' %}">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href=" {% static 'css/style.css' %}">
+	</head>
+
+	<body>
+	     
+        {% for items in place%}
+		<div class="wrapper">
+			<div class="inner">
+				
+				<img src="{{items.img.url}}" alt="" class="image-1">
+				<form  action="login" method="POST">
+				    {% csrf_token %}
+					<h3>Login</h3>
+
+					<div class="form-holder">
+						<span class="lnr lnr-user"></span>
+						<input type="text" class="form-control" name='username' placeholder={{items.username}}>
+					</div>
+					
+					<div class="form-holder">
+						<span class="lnr lnr-lock"></span>
+						<input type="password" class="form-control" name='password' placeholder={{items.pas}}>
+					</div>
+					
+					<button type= "submit" >
+						<span>Login</span>
+					</button>
+
+					<div class="form-holder">
+					 <center>
+					   <br><h4>Not registered yet? <br>
+					   <a href='register'>Register Here</a></p>
+					   </center>
+					</div>
+				</form>	
+				
+				<!--<img src="{{baseurl}}/{{place1.img2}}" alt="" class="image-2"> -->
+				<img src="{{items.img2.url}}" alt="" class="image-2">
+			</div>
+			
+		</div>
+		{% endfor %}
+        {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+        {% endif %}
+		
+		<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
+</html>

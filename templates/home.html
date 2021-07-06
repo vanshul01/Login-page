@@ -1,0 +1,25 @@
+<center>
+{% extends 'base.html' %}
+
+
+{% if user.is_auththincated%}
+
+{% block content %}
+<h1>Hello {{user.username| capfirst}}!!!</h1>
+
+<form action ="add" method='post'>
+
+{% csrf_token %}
+ Enter 1st Number :<input type ="text" name="num1"><br>
+ Enter 2nd Number :<input type ="text" name="num2"><br>
+ <input type = "submit">
+
+</form><br>
+
+
+<h4><a href = "logout">Logout</a></h4>
+
+{% endblock %}
+
+{% endif %}
+</center>
