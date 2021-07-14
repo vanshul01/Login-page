@@ -40,32 +40,53 @@ Setting up:
 2.Check Pip, python versions for proper installation check
 
 Code:
-
 python –version
-
 pip –version
 
 Installing necessary modules
+
 Code:
+
 Pip install Django
+
 Pip install psycopg2
+
 Pip install pillow
+
 3.Django admin (Run Django-admin version to display the current Django version)
+
 Code:
+
 django-admin --version
+
 4.Make different set or project 
+
 5.Now setup a new environment and activate it
+
 Code:
+
 Pip install virtualenvwrapper-win
+
+
 mkvirtualenv test
+
 Django-admin –version
+
 Mkdir projects
+
 Cd projects
+
 Django -admin startproject login
+
 Cd login
+
 dir
+
 6.Run Pgadmin and start the server
+
 Code:
+
 Python manage.py runserver
+
 Then click on the http://localhost:8000 
 
