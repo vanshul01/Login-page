@@ -25,18 +25,26 @@ Pgadmin is the most popular and feature rich Open-Source administration and deve
 
 Html
 The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+
 CSS
 Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 Functionality 
+
 Register a new user using username, password and email address.
 Let the user sign in using sessions. (Small function to get the sum of two numbers by taking inputs from the user) 
 logout the user
+
 Setting up:
-1.Download and install Visual Studio Code, python 3.9(64bit), PostgreSQL, Pgadmin 
+1.Download and install Visual Studio Code, python 3.9(64bit), PostgreSQL, Pgadmin
+
 2.Check Pip, python versions for proper installation check
+
 Code:
+
 python –version
+
 pip –version
+
 Installing necessary modules
 Code:
 Pip install Django
