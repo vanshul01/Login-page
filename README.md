@@ -2,6 +2,8 @@
 
 PREREQUISITES AND TECHNOLOGIES USED:
 
+A Simple Registration Portal for a user that allow user to register and registered user to login using python-Django ,Model View template(MVT) frame work. In which POSTGRESQL is used  for database connectivity
+
 Visual Studio
 Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
 Django
